@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+        background-image: linear-gradient(to bottom right, #00c0ff, #4218b8);
+        color: white;
+        height: 100vh; 
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }

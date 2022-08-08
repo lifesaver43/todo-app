@@ -1,0 +1,78 @@
+
+
+li {
+    cursor: pointer;
+    margin-bottom: 12px;
+
+    span.done {
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+}
+
+// UTILITY CLASS
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 1em;
+    border: 0;
+    background-color: white;
+    outline: none;
+    font-size: 1.1em;
+}
+
+button {
+    padding: 0.5em;
+    margin-left: 0;
+    border: 0;
+    background-color: white;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+.bag {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.there {
+    font-size: 1.2em;
+    background-color: #561feb;
+    padding: 0.5em;
+    margin: 0 6em;
+}
+
+li > span {
+    font-size: 1.5em;
+    background-color: #4218b8;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.bxs-plus-circle {
+    font-size: 2em;
+    color: #4218b8;
+}
+
+.bxs-trash-alt {
+    font-size: 2em;
+    padding: 0.3em;
+    background-color: #ff6f47;
+}
+
+button:hover {
+    background-color: #4218b8;
+    
+    .bxs-plus-circle {
+        color: white;
+    }
+
+}

@@ -1,2 +1,18 @@
-<h1>Welcome</h1>
-<app-nav></app-nav>
+<h1 class="flex">My Todo List App</h1>
+<!-- <p [innerText]="title"></p> -->
+<div class="flex bag">
+    <input type="text" [(ngModel)]="todoItem" />
+    <button [disabled]="isDisabled" (click)="addToList()"><i class='bx bxs-plus-circle'></i></button>
+</div>
+<div class="flex there" *ngIf="todoList.length == 0">There is no item</div>
+
+<div *ngIf="todoList.length > 0">
+    <ul>
+        <li class="flex" *ngFor="let item of todoList; let i = index">
+            <span (click)="markTodoItem(i)" [ngClass]="item.isDone ? 'done' : ''">Sn {{i}}: {{item.todo}} </span>
+            <i (click)="deleteTodoItem(i) "><i class='bx bxs-trash-alt'></i></i>
+        </li>
+    </ul>
+</div>
+
+<!-- <app-nav></app-nav> -->

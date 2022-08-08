@@ -13,3 +13,8 @@ export class NavComponent implements OnInit {
   }
 
 }
+export default {
+  myName: "Amaka",
+  age: 30
+};
+
